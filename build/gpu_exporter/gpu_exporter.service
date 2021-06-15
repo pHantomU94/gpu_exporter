@@ -1,0 +1,13 @@
+[Unit]
+Description=Prometheus GPU Exporter
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Restart=on-failure
+RestartSec=15s
+ExecStart=/usr/bin/gpu_exporter
+
+[Install]
+WantedBy=multi-user.target
