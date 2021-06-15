@@ -6,7 +6,7 @@
  * @Author: hsj
  * @Date: 2021-06-15 11:28:47
  * @LastEditors: hsj
- * @LastEditTime: 2021-06-15 14:29:10
+ * @LastEditTime: 2021-06-15 14:40:53
 -->
 
 # gpu_exporter安装及使用说明
@@ -22,7 +22,6 @@ gpu_exporter是为prometheus提供的gpu资源情况收集器
     - [**风扇转速**](#风扇转速)
     - [**温度**](#温度)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 ## 说明
 使用`nvidia-smi`采集GPU的各类运行数据，包括：风扇状态、功率、显存使用情况以及显卡利用率
 ## 安装方式
@@ -84,7 +83,6 @@ GPU_power_total_watt{gpu="GPU-0",instance="gpu"} 300
 GPU_power_used_watt{gpu="GPU-0",instance="gpu"} 58
 ```
 ### **显卡利用率**
-  * **显卡利用率**
 
 `GPU_utilization`，浮点数
 ```
@@ -93,7 +91,6 @@ GPU_power_used_watt{gpu="GPU-0",instance="gpu"} 58
 GPU_utilization{gpu="GPU-0",instance="gpu"} 0
 ```
 ### **风扇转速**
-  * **风扇转速**
 
 `GPU_fan_utilization`，浮点数，无风扇显卡没有该指标
 ```
@@ -102,7 +99,6 @@ GPU_utilization{gpu="GPU-0",instance="gpu"} 0
 GPU_fan_utilization{gpu="GPU-5",instance="gpu"} 0.6000000238418579
 ```
 ### **温度**
-  * **温度**
 
 `GPU_temperature_celsius`，单位为°C
 ```
