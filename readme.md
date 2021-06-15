@@ -6,7 +6,7 @@
  * @Author: hsj
  * @Date: 2021-06-15 11:28:47
  * @LastEditors: hsj
- * @LastEditTime: 2021-06-15 14:40:53
+ * @LastEditTime: 2021-06-15 15:39:50
 -->
 
 # gpu_exporter安装及使用说明
@@ -35,7 +35,7 @@ sudo sh install.sh
 ```
 查看运行状态
 ```
-systemctl status gpu_eporter.service
+systemctl status gpu_exporter.service
 ```
 
 ## 目前可以采集的信息
