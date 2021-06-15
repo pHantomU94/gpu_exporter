@@ -6,7 +6,7 @@
  * @Author: hsj
  * @Date: 2021-01-25 14:53:31
  * @LastEditors: hsj
- * @LastEditTime: 2021-06-15 11:54:38
+ * @LastEditTime: 2021-06-15 15:58:13
  */
 package main
 
@@ -100,8 +100,8 @@ func extractParameters(line string, index int) *GPUMetrics {
 // ReadMetric 解析nvidia-smi数据
 func ReadMetric() []*GPUMetrics {
 
-	// content := NvidiaSmi()
-	content := TestSmi()
+	content := NvidiaSmi()
+	// content := TestSmi()
 	Datas := make([]*GPUMetrics, 0)
 	if len(content) == 0 {
 		return Datas
