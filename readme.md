@@ -6,7 +6,7 @@
  * @Author: hsj
  * @Date: 2021-06-15 11:28:47
  * @LastEditors: hsj
- * @LastEditTime: 2021-06-15 11:57:03
+ * @LastEditTime: 2021-06-15 14:29:10
 -->
 
 # gpu_exporter安装及使用说明
@@ -24,7 +24,7 @@ gpu_exporter是为prometheus提供的gpu资源情况收集器
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 ## 说明
-使用`nvidia-smi`1
+使用`nvidia-smi`采集GPU的各类运行数据，包括：风扇状态、功率、显存使用情况以及显卡利用率
 ## 安装方式
 下载最新版本的`release`安装包
 
